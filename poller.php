@@ -33,15 +33,15 @@ class Database
 
     private function __construct()
     {
-        $db_host = "";
-        $db_nome = "";
-        $db_usuario = "";
-        $db_senha = "";
+        $db_host = '';
+        $db_name = '';
+        $db_user = '';
+        $db_pass = '';
         $db_driver = "mysql";
 
         try
         {
-            self::$db = new PDO("$db_driver:host=$db_host; dbname=$db_nome", $db_usuario, $db_senha);
+            self::$db = new PDO("$db_driver:host=$db_host; dbname=$db_name", $db_user, $db_pass);
             self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             self::$db->exec('SET NAMES utf8');
         }
@@ -51,7 +51,7 @@ class Database
         }
     }
 
-    public static function conexao()
+    public static function connection()
     {
         if (!self::$db)
         {
@@ -63,7 +63,7 @@ class Database
 
 }
 
-$db = Database::conexao();
+$db = Database::connection();
 
 $html = '<html><head><title>JoinUO Poller</title><meta charset="UTF-8"></head><body style="font-family: monospace">';
 
