@@ -1,12 +1,12 @@
 # JoinUO Website + Poller
 
-After droping UO Is Not Dead, I've joined JoinUO team to make a new portal. It's not active anymore.
-
-For this I've used the php Yii Framework 1.1. The poller was coded in pure php.
+After droping UO Is Not Dead, I've joined JoinUO team to make a new website in 2014.
 
 All the poller code is on the `poller.php` file. And the database schema is on `joinuo.mwb`.
 
 The site template was not designed by me, it was available for free on the Internet.
+
+[![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
 
 ## Screenshots
 
